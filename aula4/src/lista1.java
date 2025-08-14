@@ -6,9 +6,21 @@ public class lista1 {
         Scanner ler = new Scanner(System.in);
         ArrayList<Double> notas = new ArrayList<>();
         String resposta;
+        Double valor;
+
         do {
+            int x=0;
+            do{
             System.out.println("Digite uma nota");
-            notas.add(ler.nextDouble());
+            valor = ler.nextDouble();
+
+            if(valor > 0 || valor <11) {
+                notas.add(valor);
+                x=1;
+                        }
+            else  {
+                System.out.println("valor invalido");}
+            }while(x<1);
 
             System.out.println("Deseja inserir mais uma nota?");
             System.out.println("\nPressione a tecla N para sair");
