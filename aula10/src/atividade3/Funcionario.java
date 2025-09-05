@@ -55,6 +55,6 @@ public abstract class Funcionario {
         this.salariobase = salariobase;
     }
 
-   //public abstract double getsalariofinal();
+   public abstract double getsalariofinal();
 
 }

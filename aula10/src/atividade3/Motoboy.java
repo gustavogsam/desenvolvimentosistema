@@ -17,6 +17,11 @@ public class Motoboy extends Funcionario {
     }
 
     @Override
+    public double getsalariofinal() {
+        return getSalariobase();
+    }
+
+    @Override
     public String toString() {
         return "Motoboy{" +
                 "habilitacao='" + habilitacao + '\'' +
@@ -24,7 +29,7 @@ public class Motoboy extends Funcionario {
                 ", datanascimento='" + datanascimento + '\'' +
                 ", sexo=" + sexo +
                 ", Setor=" + setor +
-                ", salariobase=" + salariobase +
+                ", salariofinal=" + this.getsalariofinal() +
                 '}';
     }
 }

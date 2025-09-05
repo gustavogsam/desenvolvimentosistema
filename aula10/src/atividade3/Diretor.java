@@ -10,12 +10,19 @@ public class Diretor extends Funcionario implements Contratacao {
 
     @Override
     public void admitir(Funcionario funcionario) {
+        System.out.println(" Admitir funcionario "+ funcionario.nome);
 
     }
 
     @Override
     public void demitir(Funcionario funcionario) {
+        System.out.println(" demitir funcionario" + funcionario.nome);
 
+    }
+
+    @Override
+    public double getsalariofinal() {
+        return (this.premio * super.salariobase)+super.salariobase;
     }
 
     @Override
@@ -26,6 +33,9 @@ public class Diretor extends Funcionario implements Contratacao {
                 ", sexo=" + sexo +
                 ", setor=" + setor +
                 ", salariobase=" + salariobase +
+                ", salariofinal=" + getsalariofinal() +
                 '}';
+
     }
+
 }
